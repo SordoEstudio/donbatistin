@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Evitar zoom en inputs en iOS */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+}

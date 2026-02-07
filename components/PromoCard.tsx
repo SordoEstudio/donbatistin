@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { PromoItem } from "@/types/promos";
 
 interface PromoCardProps {
@@ -7,7 +8,7 @@ interface PromoCardProps {
 export function PromoCard({ promo }: PromoCardProps) {
   return (
     <article
-      className="bg-slate-800/80 border border-slate-600/50 rounded-xl p-4 text-left shadow-lg"
+      className="bg-slate-800/80 border border-slate-600/50 rounded-xl p-4 text-left shadow-lg overflow-hidden"
       aria-labelledby={`promo-${promo.title.replace(/\s/g, "-").toLowerCase()}`}
     >
       <div className="flex justify-between items-start gap-3">
@@ -23,12 +24,25 @@ export function PromoCard({ promo }: PromoCardProps) {
             {promo.highlight}
           </span>
         </div>
-        <span
-          className="text-lg font-bold text-amber-400 whitespace-nowrap tabular-nums"
-          aria-label={`Precio: ${promo.price}`}
-        >
-          {promo.price}
-        </span>
+        <div className="flex flex-col items-end shrink-0">
+          {promo.image && (
+            <div className="w-20 h-20 rounded-lg overflow-hidden mb-2 bg-slate-700/50">
+              <Image
+                src={promo.image}
+                alt={promo.title}
+                width={80}
+                height={80}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
+          <span
+            className="text-lg font-bold text-amber-400 whitespace-nowrap tabular-nums"
+            aria-label={`Precio: ${promo.price}`}
+          >
+            {promo.price}
+          </span>
+        </div>
       </div>
     </article>
   );

@@ -3,6 +3,7 @@ export interface PromoItem {
   description: string;
   price: string;
   highlight: string;
+  image?: string;
 }
 
 export interface LandingData {

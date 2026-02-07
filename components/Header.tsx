@@ -1,5 +1,6 @@
 import type { LandingData } from "@/types/promos";
-
+import logo from "@/public/logo.jpg";
+import Image from "next/image";
 interface HeaderProps {
   hero: LandingData["hero"];
   brand: string;
@@ -8,12 +9,13 @@ interface HeaderProps {
 export function Header({ hero, brand }: HeaderProps) {
   return (
     <header className="text-center px-4 pt-6 pb-2">
-      <span
+      <Image src={logo} alt="Logo" width={100} height={100} className="rounded-full mx-auto mb-3"/>
+{/*       <span
         className="inline-block text-xs font-semibold uppercase tracking-wider text-amber-400 bg-amber-400/15 px-3 py-1 rounded-full mb-3"
         aria-hidden
       >
         {hero.badge}
-      </span>
+      </span> */}
       <h1 className="text-xl font-bold text-white leading-tight max-w-[320px] mx-auto">
         {hero.headline}
       </h1>

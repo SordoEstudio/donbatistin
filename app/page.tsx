@@ -29,7 +29,6 @@ export default function HomePage() {
     <div className="min-h-screen max-w-mobile mx-auto flex flex-col">
       <main className="flex-1 px-4 pb-32">
         <Header hero={data.hero} brand={data.footer.brand} />
-
         <section
           className="mt-6 space-y-3"
           aria-labelledby="promos-heading"

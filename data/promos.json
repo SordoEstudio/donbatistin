@@ -4,43 +4,47 @@
     "description": "A metros del BINGO. Promos imperdibles! "
   },
   "hero": {
-    "headline": "¿Viniste al bingo? Tenemos promos especiales para vos",
+    "headline": "Vas al bingo? Tenemos promos especiales para vos",
     "subheadline": "Estamos a pocos metros con promos especiales",
     "badge": "DON BATISTIN "
   },
   "promos": [
     {
       "title": "Combo 1",
-      "description": "2 vinos toro (cajita) + Pritty de 3 lt fría + 3Kg. de hielo",
+      "description": "2 vinos toro (cajita) + Pritty de 3 lt + 3Kg. de hielo",
       "price": "$12.000",
-      "highlight": "Jarra de regalo"
+      "highlight": "Jarra de regalo",
+      "image": "/combo1.png"
     },
     {
       "title": "Combo 2",
       "description": "Gancia 950cc + Seven 3 lt + 3Kg. de hielo",
       "price": "$16.000",
-      "highlight": "Jarra de regalo"
+      "highlight": "Jarra de regalo",
+      "image": "/combo2.png"
     },
     {
       "title": "Combo 3",
       "description": "Fernet 450cc + Coca Cola 2.25 lt + 1,5 Kg. de hielo",
       "price": "$19.000",
-      "highlight": "Jarra de regalo"
+      "highlight": "Jarra de regalo",
+      "image": "/combo3.png"
     },
     {
       "title": "Combo 4",
       "description": "Fernet 750cc + 2 Coca Cola 2.25 lt + 3 Kg. de hielo",
       "price": "$31.000",
-      "highlight": "Jarra de regalo"
+      "highlight": "Jarra de regalo",
+      "image": "/combo4.png"
     }
   ],
   "cta": {
     "primary": {
-      "label": "📍 Cómo llegar ",
+      "label": "Cómo llegar ",
       "maps_url": "https://maps.app.goo.gl/qfeszwZs64ZkmiEs5"
     },
     "secondary": {
-      "label": "Seginos en Instagram",
+      "label": "Seguinos en Instagram",
       "whatsapp_url": "https://www.instagram.com/donbatistin471/"
     }
   },

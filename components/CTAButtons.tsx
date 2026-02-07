@@ -1,5 +1,5 @@
 import type { LandingData } from "@/types/promos";
-
+import { FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 interface CTAButtonsProps {
   cta: LandingData["cta"];
   fixed?: boolean;
@@ -18,7 +18,7 @@ export function CTAButtons({ cta, fixed = true }: CTAButtonsProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full py-4 px-5 text-center font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 active:bg-amber-500 rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-900"
-        >
+        ><FaMapMarkerAlt className="inline-block mr-2" />
           {cta.primary.label}
         </a>
         {cta.secondary?.whatsapp_url && (
@@ -28,6 +28,7 @@ export function CTAButtons({ cta, fixed = true }: CTAButtonsProps) {
             rel="noopener noreferrer"
             className="block w-full py-3 px-5 text-center font-semibold text-slate-200 border border-slate-500 hover:border-slate-400 rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-900"
           >
+            <FaInstagram className="inline-block mr-2" /> 
             {cta.secondary.label}
           </a>
         )}
